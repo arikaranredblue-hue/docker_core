@@ -2,8 +2,11 @@ name: Docker ci /cd pipeline
 
 on:
     push:
-        branches:
-        - main
+        branches: [main]
+        paths:
+            - 'frontend/**'
+            - '.github/workflows/**'
+    workflow_dispatch:    
 
 jobs:
     build-and-push:

@@ -43,3 +43,7 @@ This project is a simple **static website deployment** using:
 ### 🔨 Build Docker Image
 ```bash
 docker build -t static-nginx-app .
+
+### 🔨 Create ec2 and pull the image manually and run
+
+********   Refer the AWS Pdf ***********
