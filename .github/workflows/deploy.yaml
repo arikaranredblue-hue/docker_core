@@ -2,11 +2,9 @@ name: Docker ci /cd pipeline
 
 on:
     push:
-        branches: [main]
-        paths:
-            - 'frontend/**'
-            - '.github/workflows/**'
-    workflow_dispatch:    
+        branches: 
+        - main
+        
 
 jobs:
     build-and-push:
@@ -28,8 +26,8 @@ jobs:
 
             - name: docker_build
               run: |
-                 docker build -t ${{ secrets.DOCKER_USERNAME}}/myapp:v1 ./frontend
+                 docker build -t ${{ secrets.DOCKER_USERNAME}}/myapp:v2 ./frontend
 
             - name: docker_push
               run: |
-                  docker push  ${{ secrets.DOCKER_USERNAME }}/myapp:v1 
+                  docker push  ${{ secrets.DOCKER_USERNAME }}/myapp:v2
