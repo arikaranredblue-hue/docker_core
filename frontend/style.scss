@@ -1,0 +1,22 @@
+
+.container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background: #00c6ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: #0072ff;
+}
+
+#info {
+  margin-top: 20px;
+  font-size: 18px;
+}
